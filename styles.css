@@ -7,18 +7,30 @@
     box-sizing: border-box;
 }
 
-body {
-    background: linear-gradient();
+a {
+    text-decoration: none;
 }
 
-#title {
-    margin-top: 5vh;
-    font-size: 1.8em;
-    text-align: center;
+#info-box {
+    background-color: white;
+    position: absolute;
+    display: block;
+    margin-left: 70vw;
+    border-radius: 6px;
+    padding: 30px;
+    border: 1px solid #69B34C;
+}
+
+#info-box a {
+    color: green;
+}
+
+#info-box h1 {
+    color: green;
 }
 
 #accordion {
-    margin: 7vh auto;
+    margin: 7vh 10vw;
     width: 910px;
 }
 
@@ -28,8 +40,8 @@ body {
     margin-bottom: 20px;
     background: white;
     padding: 20px;
-    border: 1px #5A5A5A solid;
     border-radius: 6px;
+    border: 1px solid #69B34C;
 }
 
 #accordion label {
@@ -54,7 +66,6 @@ body {
 }
 
 .docs a {
-    text-decoration: none;
     color: black;
 }
 
@@ -99,7 +110,7 @@ body {
     max-height: 6000px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1800px) {
 
     #accordion {
         width: 680px;
@@ -109,20 +120,8 @@ body {
         width: 640px;
         height: 360px;
     }
-}
 
-@media (max-width: 480px) {
-
-    #accordion {
-        width: 400px;
-    }
-
-    iframe {
-        width: 384px;
-        height: 216px;
-    }
-
-    #accordion li {
-        padding: 8px;
+    #info-box {
+        margin-left: 65vw;
     }
 }
